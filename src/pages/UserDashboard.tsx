@@ -1,9 +1,10 @@
+import React from "react";
 import "../styles/userDashbord.css";
 
 
-function UserDashbord() {
+const UserDashbord: React.FC = () => {
     return (
-        <h1>Dein dashboard</h1>
+        <h1>Hier könnte schon ein Dashboard sein</h1>
     )
 }
 

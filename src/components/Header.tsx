@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header: React.FC = () => {
@@ -10,10 +10,10 @@ const Header: React.FC = () => {
 
             <nav>
                 <a href="#">Links</a>
-                <a href="#">Mitte</a>
+                <Link to="./dashboard">Dashboard</Link>
                 <a href="#">Rechts</a>
             </nav>
-        </header>
+        </header >
     )
 }
 
