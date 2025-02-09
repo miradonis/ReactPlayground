@@ -1,13 +1,20 @@
+import { Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import LoginForm from './components/LoginForm';
+import UserDashboard from './pages/UserDashboard';
 import './App.css';
 
 function App() {
   return (
     <>
+      {/* header ist auf jeder seite sichtbar */}
       <Header />
-      <h1>Servus Grüzi und Hallo</h1>
-      <LoginForm />
+      <main>
+        <Routes>
+          <Route path="/" element={<LoginForm />} />
+          <Route path="/dashboard" element={<UserDashboard />} />
+        </Routes>
+      </main>
     </>
   )
 }
