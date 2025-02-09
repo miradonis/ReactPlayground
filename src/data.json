@@ -1,0 +1,18 @@
+[
+    {
+        "username": "user1",
+        "password": "password123"
+    },
+    {
+        "username": "admin",
+        "password": "adminpass"
+    },
+    {
+        "username": "john_doe",
+        "password": "securePass!2024"
+    },
+    {
+        "username": "jane_doe",
+        "password": "mySecret123"
+    }
+]

@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 3vh 10vw;
+    border-bottom: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+
+header p {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+header nav {
+    display: flex;
+    gap: 0 3vw;
+}
+
+header nav a {
+    text-decoration: none;
+    color: red;
+    font-size: clamp(1rem, 1.4vw, 1.8rem);
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
