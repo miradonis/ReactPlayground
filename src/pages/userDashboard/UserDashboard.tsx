@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/userDashbord.css";
+import "./userDashbord.css";
 
 
 const UserDashbord: React.FC = () => {

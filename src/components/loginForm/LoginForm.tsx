@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import "../styles/LoginForm.css";
-import users from "../data.json";
+import "./LoginForm.css";
+import users from "../../data.json";
 
 
 
@@ -48,21 +48,21 @@ const LoginForm: React.FC = () => {
 
     return (
         <article>
+            <h2>Login or Sign up</h2>
             <form onSubmit={checkUserInputs}>
-                <div>
-                    <label htmlFor="username">Wia hoast: </label>
-                    <input type="text" id="username" onChange={(event) => {
+                <div className="user-login-wrapper">
+                    <input type="text" placeholder="Username" id="username" onChange={(event) => {
                         setuserName(event?.target.value);
                     }} />
                 </div>
 
-                <div>
-                    <label htmlFor="password">Passwort: </label>
-                    <input type="password" id="password" onChange={(event) => {
+                <div className="user-login-wrapper">
+                    <input type="password" placeholder="Password" id="password" onChange={(event) => {
                         setuserPassword(event?.target.value)
                     }} />
                 </div>
-                <button type="submit">I geh moi schaun obs di scho gibt</button>
+                <a href="">Don´t have an account</a>
+                <button type="submit">Login</button>
             </form>
         </article>
     )
